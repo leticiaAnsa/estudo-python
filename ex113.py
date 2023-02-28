@@ -3,6 +3,17 @@
 #Aproveite e crie também uma função leiaFloat() com a mesma 
 #funcionalidade
 
+#def leiaInt(msg):
+#    n = int(input(msg))
+
+#def leiaFloat(msg):
+#    n = int(input(msg))
+
+#n1 = leiaInt('Digite um num: ')
+#n2 = leiaFloat('digite um float: )
+#print(f'O número digitado foi: {n1} e o número float foi: {n2}')
+
+
 def leiaInt(msg):
     while True:
         try:
