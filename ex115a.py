@@ -1,7 +1,12 @@
 from interface import *
 from interface import menu
 from time import sleep
+from arquivo import *
 
+arq = 'Cursoemvideo.txt'
+
+if arquivoExiste(arq):
+    
 
 while True:
 
