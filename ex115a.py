@@ -1,26 +1,37 @@
 from interface import *
 from interface import menu
 from time import sleep
-from arquivo import *
 
-arq = 'Cursoemvideo.txt'
+
+arq = 'cursoemvídeo.txt'
 
 if arquivoExiste(arq):
-    
+    criarArquivo(arq)
 
 while True:
 
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])
     if resposta == 1:
-        cabeçario('Opção 1', 'vermelho')
+        'Gustavo 21'
+        'Leticia 12'
+
+        #Opção de listar o conteúdo de um arquivo!
     elif resposta == 2:
         cabeçario('Opção 2')
+        cabeçario('NOVO CADASTRO')
+        nome = str(input('Nome: '))
+        idade = leiaInt('Idade: ')
+        cadastrar(arq, nome, idade)
+
     elif resposta == 3:
         cabeçario('Saindo do sistema... Até logo!')
         break
     else:
         print('\033[31mErro! Digite uma opção válida!\033[m')
         sleep(2)
+
+
+
 
 
 
@@ -43,14 +54,6 @@ while True:
 #print('-' * 39)
 #opção = input('Que opção você escolheu: ')
 #if opção == '1':
-#    print('''    Larissa
-#    Cibele
-#    Heitor
-#    Vaunir
-#    João Pedro
-#    Davi Lucca
-#    Ana Leticia
-#    ''')
 
 #if opção == '2':
 #    nome = input('Nome: ')
@@ -66,5 +69,3 @@ while True:
 
 #if opção == '3':
 #    print('Ok, até a próxima')
-
-

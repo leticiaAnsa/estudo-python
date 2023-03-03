@@ -1,2 +1,0 @@
-def ArquivoExiste(nome):
-    try:
