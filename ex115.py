@@ -12,6 +12,7 @@ while True:
 
     resposta = menu(['Ver pessoas cadastradas', 'Cadastrar nova Pessoa', 'Sair do Sistema'])
     if resposta == 1:
+        sleep(2)
         'Gustavo 21'
         'Leticia 12'
 
